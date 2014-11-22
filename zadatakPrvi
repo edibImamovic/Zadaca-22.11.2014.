@@ -1,0 +1,53 @@
+/*
+ * Edib Imamović: 22.11.2014. 20:45h
+ * Napravite program koji određuje horoskopski znak korisnika! Korisnik treba unijeti 
+ * dan i mjesec rođenja, a program ce ispisati odgovarajudi znak u horoskopu.
+ * 
+ * 
+ */
+
+public class zadatakJedan {
+	public static void main(String[] args) {
+		System.out.println("Molim Vas da unesete mjesec rodjenja:");
+		int mjesec = TextIO.getInt();
+		System.out.println("Molim Vas da unesete dan rodjenja:");
+		int dan = TextIO.getInt();
+		
+		if ((mjesec == 3)&&(dan<=21)||(mjesec == 4)&&( dan<=20)){
+			System.out.println("Vas horoskopski znak je: Ovan");
+		}
+		else if ((mjesec == 4)&&(dan>=21)||(mjesec == 5)&&( dan<=21)){
+			System.out.println("Vas horoskopski znak je: Bik");
+		}
+		else if ((mjesec == 5)&&(dan>=21)||(mjesec == 6)&&( dan<=21)){
+			System.out.println("Vas horoskopski znak je: Blizanci");
+		}
+		else if ((mjesec == 6)&&(dan>=22)||(mjesec == 7)&&( dan<=22)){
+			System.out.println("Vas horoskopski znak je: Rak");
+		}
+		else if ((mjesec == 7)&&(dan>=23)||(mjesec == 8)&&( dan<=23)){
+			System.out.println("Vas horoskopski znak je: Lav");
+		}
+		else if ((mjesec == 8)&&(dan>=24)||(mjesec == 9)&&( dan<=23)){
+			System.out.println("Vas horoskopski znak je: Djevica");
+		}
+		else if ((mjesec == 9)&&(dan>=24)||(mjesec == 10)&&( dan<=23)){
+			System.out.println("Vas horoskopski znak je: Vaga");
+		}
+		else if ((mjesec == 10)&&(dan>=24)||(mjesec ==11)&&( dan<=22)){
+			System.out.println("Vas horoskopski znak je: Skorpija");	
+		}
+		else if ((mjesec == 11)&&(dan>=23)||(mjesec ==12)&&( dan<=21)){
+			System.out.println("Vas horoskopski znak je: Strijelac");	
+		}
+		else if ((mjesec == 12)&&(dan>=22)||(mjesec ==1)&&( dan<=21)){
+			System.out.println("Vas horoskopski znak je: Jarac");	
+		}
+		else if ((mjesec == 1)&&(dan>21)||(mjesec ==2)&&( dan<=19)){
+			System.out.println("Vas horoskopski znak je: Vodolija");	
+		}
+		else if((mjesec == 2)&&(dan>20)||(mjesec ==3)&&( dan<=20)){
+			System.out.println("Vas horoskopski znak je: Ribe");	
+		}
+}
+}
