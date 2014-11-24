@@ -1,0 +1,47 @@
+/*
+ * Edib Imamović: Verzija 1 24.11.2014. 19:48h
+ * 
+ * Napisati program koji ce izračunati presjek skupova S1 i S2 . 
+ * Skupovi su zadani intervalima realnih brojeva:
+ * S1 = [a, b] i S2 = [c, d]
+ * Primjerice, ako se kao ulaz uzmu skupovi
+ * S1 = [3, 9] i S2 = [ 7, 11]
+ * Program treba da vrati rezultat: Presjek je [7, 9]
+ * Napomena: 
+ * Vaš program mora obraditi sve moguce situacije (skupovi se ne sijeku, skup je 
+ * sadržan u skupu i obratno itd.) Sljededi testni podaci sa rezultatima de vam pomodi 
+ * da se uvjerite da je vaš program ispravan.
+ * a = 3, b = 7, c = 9, d = 11 Skupovi se ne sijeku
+ * a = 3, b = 11, c = 7, d = 9
+ * Presjek je [7, 9]
+ * a = 7, b = 11, c = 3, d = 9
+ * Presjek je [7, 9]
+ */
+
+public class zadatakCetvrti {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Unesite prvi broj");
+		int num1 = TextIO.getInt();
+		System.out.println("Unesite drugi broj");
+		int num2 = TextIO.getInt();
+		System.out.println("Unesite treci broj");
+		int num3 = TextIO.getInt();
+		System.out.println("Unesite cetvrti broj");
+		int num4 = TextIO.getInt();
+		
+	
+				for (int i=num1; i<=num2; i++){
+					if ((i != num3)||(i != num4)){
+						System.out.println("Skupovi se ne sijeku");
+					}
+					else System.out.println("Skupovi se sijeku");
+						
+				}
+				
+					}
+				}	
+				
+		
+	
