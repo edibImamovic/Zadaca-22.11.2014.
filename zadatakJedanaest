@@ -1,0 +1,27 @@
+/*Edib Imamovic, Zadatak 11, 25.11.2014.11.27h
+ * 
+ * Od korisnika traziti da unese recenicu (sa razmacima) i odredeno slovo. Na konzolu
+ * ispisati istu recenicu bez tog slova.
+ * Primjer:
+ * Unesite recenicu:
+ * PeoplE are strange when you’re a stranger.
+ * Unesite slovo:
+ * Popl ar strang whn you’r a strangr
+ * Napomena
+ * U ovom slucaju ne pravimo razliku izmedu malog i velikog slova
+ */
+
+public class zadatakJedanaest {
+	public static void main(String[] args) {
+		
+		System.out.println("Molim Vas upisite neku recenicu (sa razmacima):");
+		String unosRecenice = TextIO.getlnString().toLowerCase();
+		System.out.println("Molim Vas unesite slovo");
+		String slovo = TextIO.getlnString().toLowerCase();
+		
+		String novaRecenica = unosRecenice.replaceAll(slovo,"");
+		System.out.println(novaRecenica);
+		}
+		
+	}
+
